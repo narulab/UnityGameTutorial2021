@@ -13,6 +13,10 @@ public class Player : MonoBehaviour
         {
             x += 3.0f * Time.deltaTime;
         }
+        if (Input.GetKey(KeyCode.LeftArrow))
+        {
+            x -= 3.0f * Time.deltaTime;
+        }
         transform.localPosition = new Vector3(x, 0, 0);
     }
 }
