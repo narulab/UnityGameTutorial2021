@@ -9,7 +9,10 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        x += 3.0f * Time.deltaTime;
+        if (Input.GetKey(KeyCode.RightArrow))
+        {
+            x += 3.0f * Time.deltaTime;
+        }
         transform.localPosition = new Vector3(x, 0, 0);
     }
 }
