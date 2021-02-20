@@ -18,6 +18,13 @@ public class Bullet : MonoBehaviour
         // 下に移動
         y -= 10.0f * Time.deltaTime;
 
+        // 地面より下に行った場合
+        if (y < 0.0f)
+        {
+            // 初期化
+            y = 12.0f;
+        }
+
         // 位置を更新
         transform.localPosition = new Vector3(0, y, 0);
     }
