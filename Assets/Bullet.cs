@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
+    float x = 0.0f;
     float y = 12.0f;
 
     // Start is called before the first frame update
@@ -22,10 +23,11 @@ public class Bullet : MonoBehaviour
         if (y < 0.0f)
         {
             // 初期化
+            x = Random.Range(-8.0f, 8.0f);
             y = 12.0f;
         }
 
         // 位置を更新
-        transform.localPosition = new Vector3(0, y, 0);
+        transform.localPosition = new Vector3(x, y, 0);
     }
 }
