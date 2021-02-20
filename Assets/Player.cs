@@ -25,4 +25,11 @@ public class Player : MonoBehaviour
         // 位置を更新
         transform.localPosition = new Vector3(x, 0, 0);
     }
+
+    // 当たり判定が検出されたときに実行される
+    private void OnTriggerEnter(Collider other)
+    {
+        // ゲームオーバー
+        Destroy(gameObject);
+    }
 }
