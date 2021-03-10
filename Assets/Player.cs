@@ -56,6 +56,7 @@ public class Player : MonoBehaviour
         else
         {
             // ゲームオーバー（自機を消す）
+            gameOverText.text = "ELIMINATED!!";
             Destroy(gameObject);
         }
     }
