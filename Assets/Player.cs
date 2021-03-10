@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
@@ -8,6 +9,7 @@ public class Player : MonoBehaviour
     int score = 0;              // スコア
 
     public GameObject goal;     // ゴールオブジェクト
+    public Text gameOverText;   // ゲームオーバー表示用テキスト
 
     // 毎フレーム実行される
     void Update()
