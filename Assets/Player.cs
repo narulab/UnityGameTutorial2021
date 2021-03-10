@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    float x = -10.0f;
+    float x = -10.0f;           // X座標
+
+    public GameObject goal;     // ゴールオブジェクト
 
     // 毎フレーム実行される
     void Update()
