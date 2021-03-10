@@ -44,6 +44,7 @@ public class Player : MonoBehaviour
             if (score >= 5)
             {
                 // クリア
+                gameOverText.text = "QUALIFIED!!";
                 GetComponent<Collider>().enabled = false;
             }
             else
