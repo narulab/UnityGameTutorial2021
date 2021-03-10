@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    float x = 0.0f;
+    float x = -10.0f;
 
     // 毎フレーム実行される
     void Update()
