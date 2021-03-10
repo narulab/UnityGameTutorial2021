@@ -1230,6 +1230,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   goal: {fileID: 249625399}
+  scoreText: {fileID: 1070894962}
   gameOverText: {fileID: 1163923668}
 --- !u!54 &1719072999
 Rigidbody:

@@ -10,6 +10,7 @@ public class Player : MonoBehaviour
 
     public GameObject goal;     // ゴールオブジェクト
     public Text gameOverText;   // ゲームオーバー表示用テキスト
+    public Text scoreText;      // スコア表示用テキスト
 
     // 毎フレーム実行される
     void Update()
