@@ -40,6 +40,7 @@ public class Player : MonoBehaviour
         {
             // スコアを加算
             score++;
+            scoreText.text = $"SCORE:{score}/5";
 
             // スコアが5以上になった場合
             if (score >= 5)
