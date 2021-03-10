@@ -5,6 +5,7 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     float x = -10.0f;           // X座標
+    int score = 0;              // スコア
 
     public GameObject goal;     // ゴールオブジェクト
 
@@ -31,7 +32,19 @@ public class Player : MonoBehaviour
     // 当たり判定が検出されたときに実行される
     private void OnTriggerEnter(Collider other)
     {
-        // ゲームオーバー（自機を消す）
-        Destroy(gameObject);
+        // ゴールと接触した場合
+        if (other.gameObject == goal)
+        {
+            // スコアを加算
+            score++;
+
+            // スタート地点に戻る
+            x = -10.0f;
+        }
+        else
+        {
+            // ゲームオーバー（自機を消す）
+            Destroy(gameObject);
+        }
     }
 }
