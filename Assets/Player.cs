@@ -38,8 +38,17 @@ public class Player : MonoBehaviour
             // スコアを加算
             score++;
 
-            // スタート地点に戻る
-            x = -10.0f;
+            // スコアが5以上になった場合
+            if (score >= 5)
+            {
+                // クリア
+                GetComponent<Collider>().enabled = false;
+            }
+            else
+            {
+                // スタート地点に戻る
+                x = -10.0f;
+            }
         }
         else
         {
